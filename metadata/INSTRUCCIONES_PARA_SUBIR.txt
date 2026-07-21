@@ -1,0 +1,15 @@
+CARPETA CREADA:
+/home/spinky/PARA_SUBIR_GITHUB_predictive-sac-navigation_20260721_173306
+
+Esta carpeta es una COPIA independiente. No se modificó:
+/home/spinky/articulodoctorado
+
+Para GitHub:
+1. Abre tu repositorio privado predictive-sac-navigation.
+2. Usa Add file > Upload files.
+3. Arrastra el CONTENIDO de esta carpeta (no el proyecto original).
+4. Espera a que termine la carga y confirma el commit.
+
+No subas los tres checkpoints SAC completos de más de 250 MB; ya fueron
+excluidos de esta copia. Los cuatro actores congelados usados por el artículo
+sí están incluidos.

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/spinky/PARA_SUBIR_GITHUB_predictive-sac-navigation_20260721_173306/crear_figura_6.py", line 6, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
