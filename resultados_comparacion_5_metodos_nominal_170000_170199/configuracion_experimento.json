@@ -1,0 +1,75 @@
+{
+  "condicion": "nominal_limpia",
+  "semilla_base": 170000,
+  "numero_semillas": 200,
+  "metodos": [
+    "A* + DWA",
+    "A* + TD3",
+    "A* + SAC-R",
+    "A* + SAC-PO-TTC",
+    "A* + SAC-UPO-TTC"
+  ],
+  "umbral_casi_colision_m": 0.2,
+  "umbral_ttc_riesgoso_s": 1.0,
+  "horizonte_calibracion_s": 2.0,
+  "dt": 0.1,
+  "pasos_maximos": 400,
+  "programas": {
+    "programa_base": "SAC_predictivo_entrenamiento_completo.py",
+    "programa_td3": "TD3_tercera_corrida_desde_cero.py",
+    "programa_upo": "SAC_probabilistico_ocupacion_TTC_entrenamiento.py"
+  },
+  "checkpoints": {
+    "A* + TD3": {
+      "nombre": "A* + TD3",
+      "ruta": "resultados_td3/tercera_corrida_td3_desde_cero/checkpoint_mejor_actor_td3.pt",
+      "sha256": "5034138cf640231bdf5559fba7d1cd3cc54b53f096b62eef6f4ccd0f20aca7f7",
+      "episodio": 300,
+      "tipo": "mejor_actor_td3",
+      "variante": "td3_reactivo_tercera_corrida_desde_cero",
+      "numero_parametros": 274962
+    },
+    "A* + SAC-R": {
+      "nombre": "A* + SAC-R",
+      "ruta": "resultados_sac/tercera_corrida_reactivo_mejorado/checkpoint_mejor_actor_reactivo_mejorado.pt",
+      "sha256": "0140b9b6258cc6d105e9ab4fd34f4583a9c687b84608d370b71ea198971f1aab",
+      "episodio": 260,
+      "tipo": "mejor_actor_sac_reactivo_mejorado",
+      "variante": "reactivo_mejorado",
+      "numero_parametros": 275476
+    },
+    "A* + SAC-PO-TTC": {
+      "nombre": "A* + SAC-PO-TTC",
+      "ruta": "resultados_sac/entrenamiento_sac_predictivo/checkpoint_mejor_actor_sac_predictivo.pt",
+      "sha256": "2cb93dc3f51367d0caf1c90daa08334c2b542d23fefde35750b8f099cac2d87b",
+      "episodio": 240,
+      "tipo": "mejor_actor_sac_predictivo",
+      "variante": "predictivo",
+      "numero_parametros": 275476
+    },
+    "A* + SAC-UPO-TTC": {
+      "nombre": "A* + SAC-UPO-TTC",
+      "ruta": "resultados_sac/entrenamiento_sac_probabilistico_upo_ttc/checkpoint_mejor_actor_sac_probabilistico.pt",
+      "sha256": "dd2f9d4bf5722edb5dcfa9fd19c226b87a77c3daefd72a9846ef5b7affd3f18b",
+      "episodio": 400,
+      "tipo": "mejor_actor_sac_predictivo",
+      "variante": "predictivo",
+      "numero_parametros": 275476
+    }
+  },
+  "upo_sensor": {
+    "latencia_maxima_pasos": 0,
+    "sigma_posicion_min_m": 0.0,
+    "sigma_posicion_max_m": 0.0,
+    "sigma_velocidad_min_m_s": 0.0,
+    "sigma_velocidad_max_m_s": 0.0
+  },
+  "upo_modelo_monte_carlo": {
+    "numero_muestras": 12,
+    "sigma_posicion_modelo_m": 0.025,
+    "sigma_velocidad_relativa": 0.18,
+    "sigma_direccion_rad": 0.2617993877991494,
+    "sigma_aceleracion_m_s2": 0.3,
+    "sigma_giro_rad_s": 0.4363323129985824
+  }
+}

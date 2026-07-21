@@ -1,0 +1,89 @@
+COMPARACIÓN PAREADA DE CINCO MÉTODOS
+================================================================================
+Condición: nominal limpia
+Semillas: 170000 a 170199
+Número de escenarios: 200
+Entrenamiento durante la comparación: NO
+UPO-TTC: ruido sensorial = 0 y latencia = 0; incertidumbre Monte Carlo interna activa.
+
+CHECKPOINTS CONGELADOS
+--------------------------------------------------------------------------------
+A* + TD3: episodio=300 | parámetros=274962 | sha256=5034138cf640231bdf5559fba7d1cd3cc54b53f096b62eef6f4ccd0f20aca7f7 | /home/spinky/articulodoctorado/resultados_td3/tercera_corrida_td3_desde_cero/checkpoint_mejor_actor_td3.pt
+A* + SAC-R: episodio=260 | parámetros=275476 | sha256=0140b9b6258cc6d105e9ab4fd34f4583a9c687b84608d370b71ea198971f1aab | /home/spinky/articulodoctorado/resultados_sac/tercera_corrida_reactivo_mejorado/checkpoint_mejor_actor_reactivo_mejorado.pt
+A* + SAC-PO-TTC: episodio=240 | parámetros=275476 | sha256=2cb93dc3f51367d0caf1c90daa08334c2b542d23fefde35750b8f099cac2d87b | /home/spinky/articulodoctorado/resultados_sac/entrenamiento_sac_predictivo/checkpoint_mejor_actor_sac_predictivo.pt
+A* + SAC-UPO-TTC: episodio=400 | parámetros=275476 | sha256=dd2f9d4bf5722edb5dcfa9fd19c226b87a77c3daefd72a9846ef5b7affd3f18b | /home/spinky/articulodoctorado/resultados_sac/entrenamiento_sac_probabilistico_upo_ttc/checkpoint_mejor_actor_sac_probabilistico.pt
+
+RESULTADOS POR MÉTODO
+--------------------------------------------------------------------------------
+A* + DWA
+  Éxito: 99.50% [IC Wilson: 97.22%, 99.91%]
+  Colisión dinámica: 0.50%
+  Colisión estática: 0.00%
+  Timeout: 0.00%
+  SPL medio: 0.9772
+  Tasa de episodios con casi colisión: 1.50%
+  Eventos de casi colisión/episodio: 0.0150
+  Tiempo de ciclo medio: 111.1579 ms
+
+A* + TD3
+  Éxito: 70.50% [IC Wilson: 63.84%, 76.39%]
+  Colisión dinámica: 28.00%
+  Colisión estática: 1.50%
+  Timeout: 0.00%
+  SPL medio: 0.7012
+  Tasa de episodios con casi colisión: 35.00%
+  Eventos de casi colisión/episodio: 0.3750
+  Tiempo de ciclo medio: 1.5999 ms
+
+A* + SAC-R
+  Éxito: 81.50% [IC Wilson: 75.54%, 86.27%]
+  Colisión dinámica: 15.50%
+  Colisión estática: 0.50%
+  Timeout: 2.50%
+  SPL medio: 0.8127
+  Tasa de episodios con casi colisión: 22.00%
+  Eventos de casi colisión/episodio: 0.2250
+  Tiempo de ciclo medio: 2.7647 ms
+
+A* + SAC-PO-TTC
+  Éxito: 84.00% [IC Wilson: 78.29%, 88.43%]
+  Colisión dinámica: 8.00%
+  Colisión estática: 6.50%
+  Timeout: 1.50%
+  SPL medio: 0.8362
+  Tasa de episodios con casi colisión: 12.00%
+  Eventos de casi colisión/episodio: 0.1250
+  Tiempo de ciclo medio: 10.6851 ms
+
+A* + SAC-UPO-TTC
+  Éxito: 74.50% [IC Wilson: 68.04%, 80.04%]
+  Colisión dinámica: 15.00%
+  Colisión estática: 5.50%
+  Timeout: 3.00%
+  SPL medio: 0.7341
+  Tasa de episodios con casi colisión: 19.00%
+  Eventos de casi colisión/episodio: 0.2150
+  Tiempo de ciclo medio: 5.5893 ms
+
+PRUEBA GLOBAL DE ÉXITO
+--------------------------------------------------------------------------------
+Q de Cochran: 74.7565543071161
+gl: 4
+p global: 2.2433961178515137e-15
+
+COMPARACIONES PAREADAS DE ÉXITO
+--------------------------------------------------------------------------------
+A* + DWA vs A* + TD3: diferencia B-A=-29.00 puntos; IC95=[-35.00, -23.00]; McNemar p=6.93889e-18; Holm p=6.93889e-17
+A* + DWA vs A* + SAC-R: diferencia B-A=-18.00 puntos; IC95=[-23.50, -12.50]; McNemar p=2.83762e-10; Holm p=2.2701e-09
+A* + DWA vs A* + SAC-PO-TTC: diferencia B-A=-15.50 puntos; IC95=[-21.00, -10.50]; McNemar p=9.31323e-10; Holm p=6.51926e-09
+A* + DWA vs A* + SAC-UPO-TTC: diferencia B-A=-25.00 puntos; IC95=[-31.00, -19.50]; McNemar p=2.35367e-14; Holm p=2.11831e-13
+A* + TD3 vs A* + SAC-R: diferencia B-A=11.00 puntos; IC95=[3.50, 18.50]; McNemar p=0.0081469; Holm p=0.0407345
+A* + TD3 vs A* + SAC-PO-TTC: diferencia B-A=13.50 puntos; IC95=[6.00, 21.00]; McNemar p=0.000729905; Holm p=0.00437943
+A* + TD3 vs A* + SAC-UPO-TTC: diferencia B-A=4.00 puntos; IC95=[-4.50, 12.50]; McNemar p=0.415985; Holm p=0.83197
+A* + SAC-R vs A* + SAC-PO-TTC: diferencia B-A=2.50 puntos; IC95=[-3.50, 8.50]; McNemar p=0.511376; Holm p=0.83197
+A* + SAC-R vs A* + SAC-UPO-TTC: diferencia B-A=-7.00 puntos; IC95=[-14.00, 0.50]; McNemar p=0.0869489; Holm p=0.260847
+A* + SAC-PO-TTC vs A* + SAC-UPO-TTC: diferencia B-A=-9.50 puntos; IC95=[-17.00, -2.00]; McNemar p=0.0204147; Holm p=0.0816589
+
+NOTA METODOLÓGICA
+--------------------------------------------------------------------------------
+Estas semillas quedan consumidas después de observar los resultados. No deben usarse para ajustar los controladores y volver a presentarse como evaluación confirmatoria.

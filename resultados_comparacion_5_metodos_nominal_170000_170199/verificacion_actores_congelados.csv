@@ -1,0 +1,5 @@
+metodo,actor_sin_cambios,actor_sin_gradientes,parametros_finitos,verificacion_correcta
+A* + TD3,1,1,1,1
+A* + SAC-R,1,1,1,1
+A* + SAC-PO-TTC,1,1,1,1
+A* + SAC-UPO-TTC,1,1,1,1
