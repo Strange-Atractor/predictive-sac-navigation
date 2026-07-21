@@ -1,0 +1,46 @@
+PRUEBA INDEPENDIENTE DEL SAC PREDICTIVO
+========================================================================
+
+Checkpoint: resultados_sac/entrenamiento_sac_predictivo/checkpoint_mejor_actor_sac_predictivo.pt
+Episodio del actor: 240
+Política determinista: True
+Entrenamiento durante la prueba: False
+Observación predictiva: True
+TTC: True
+
+Semillas: 87000 a 87099
+Número de semillas: 100
+Semillas finales 70000–70099 reservadas: True
+
+Éxitos: 86/100
+Tasa de éxito: 86.00%
+IC Wilson 95%: [77.86%, 91.47%]
+Conteos: {'meta': 86, 'colision_estatica': 6, 'colision_dinamica': 8, 'fuera_mapa': 0, 'timeout': 0}
+Colisión estática: 6.00%
+Colisión dinámica: 8.00%
+Fuera del mapa: 0.00%
+Timeout: 0.00%
+
+Recompensa media: 212.59845723036975
+Pasos promedio: 207.24
+Distancia final media: 1.0946548344513363 m
+Error medio de ruta promedio: 0.20131825152908436 m
+Clearance mínimo promedio: 0.3283366623867213 m
+Clearance mínimo absoluto: -0.028727979069663956 m
+
+EPISODIOS EXITOSOS
+Tiempo promedio: 21.59767441860465 s
+Longitud promedio: 10.484597947699722 m
+Error de ruta promedio: 0.2013917555405866 m
+Clearance mínimo promedio: 0.3842718032374127 m
+
+CRITERIOS
+Éxito >= 85%: True
+Colisión dinámica <= 10%: True
+Colisión estática <= 10%: True
+Fuera del mapa <= 5%: True
+Timeout <= 5%: True
+TODOS LOS CRITERIOS: True
+
+SEMILLAS FALLIDAS
+[87022, 87023, 87026, 87028, 87033, 87052, 87058, 87059, 87065, 87073, 87076, 87077, 87079, 87097]

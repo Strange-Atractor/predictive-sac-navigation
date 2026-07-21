@@ -1,0 +1,17 @@
+PRUEBA INDEPENDIENTE TD3 DESDE CERO
+========================================================================
+Checkpoint: resultados_td3/tercera_corrida_td3_desde_cero/checkpoint_mejor_actor_td3.pt
+Episodio: 300
+Semillas: 168000 a 168099
+Éxitos: 67/100
+Tasa de éxito: 67.00%
+IC Wilson 95%: [57.31%, 75.44%]
+Conteos: {'meta': 67, 'colision_estatica': 0, 'colision_dinamica': 33, 'fuera_mapa': 0, 'timeout': 0}
+Colisión dinámica: 33.00%
+Colisión estática: 0.00%
+Fuera del mapa: 0.00%
+Timeout: 0.00%
+Métricas: {'recompensa_media': 97.64279785025136, 'pasos_promedio': 157.32, 'distancia_final_media': 2.245667482927093, 'error_ruta_medio': 0.22607037861312956, 'clearance_minimo_promedio': 0.17972294866453808, 'clearance_minimo_absoluto': -0.03926321808523453, 'tiempo_promedio_exitos': 19.507462686567166, 'longitud_promedio_exitos': 10.91768679666397, 'clearance_promedio_exitos': 0.2748134981137523, 'inferencia_media_ms': 0.7655405820455725, 'inferencia_p95_episodios_ms': 0.8087236268693232}
+Criterios generales: {'exito': False, 'colision_dinamica': False, 'colision_estatica': True, 'fuera_mapa': True, 'timeout': True, 'todos': False}
+Criterios mínimos de baseline: {'exito': False, 'colision_dinamica': False, 'colision_estatica': True, 'fuera_mapa': True, 'timeout': True, 'todos': False}
+Semillas fallidas: [168000, 168001, 168002, 168003, 168005, 168007, 168008, 168015, 168016, 168018, 168021, 168027, 168039, 168040, 168042, 168046, 168048, 168054, 168059, 168062, 168063, 168064, 168067, 168068, 168070, 168076, 168080, 168081, 168083, 168087, 168092, 168096, 168098]

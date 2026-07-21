@@ -1,0 +1,49 @@
+PRUEBA INDEPENDIENTE DEL SAC REACTIVO MEJORADO
+========================================================================
+
+Checkpoint: resultados_sac/tercera_corrida_reactivo_mejorado/checkpoint_mejor_actor_reactivo_mejorado.pt
+Episodio del actor: 260
+Semillas: 65000 a 65099
+Número de semillas: 100
+Política: determinista
+Entrenamiento durante esta prueba: no
+Predicción: no
+TTC: no
+
+RESULTADOS
+------------------------------------------------------------------------
+Éxitos: 84/100
+Tasa de éxito: 84.00%
+IC Wilson 95%: [75.58%, 89.90%]
+Colisiones estáticas: 4 (4.00%)
+Colisiones dinámicas: 10 (10.00%)
+Fuera del mapa: 0 (0.00%)
+Timeout: 2 (2.00%)
+
+MÉTRICAS GENERALES
+------------------------------------------------------------------------
+Recompensa media: 217.774510
+Pasos promedio: 203.590
+Distancia final media: 1.248214 m
+Error medio de ruta promedio: 0.200289 m
+Clearance mínimo promedio: 0.303619 m
+Clearance mínimo absoluto: -0.080770 m
+
+MÉTRICAS DE EPISODIOS EXITOSOS
+------------------------------------------------------------------------
+Tiempo promedio: 21.463095 s
+Longitud promedio: 10.532929 m
+Error medio de ruta: 0.200675 m
+Clearance mínimo promedio: 0.357873 m
+
+CRITERIOS DE ROBUSTEZ
+------------------------------------------------------------------------
+Éxito >= 85%: False
+Colisión dinámica <= 10%: True
+Colisión estática <= 10%: True
+Fuera del mapa <= 5%: True
+Timeout <= 5%: True
+Todos los criterios: False
+
+Semillas fallidas (16):
+[65014, 65025, 65032, 65035, 65041, 65043, 65052, 65068, 65072, 65078, 65084, 65086, 65089, 65090, 65091, 65092]

@@ -1,0 +1,21 @@
+PRUEBA INDEPENDIENTE SAC-UPO-TTC
+========================================================================
+Checkpoint: resultados_sac/entrenamiento_sac_probabilistico_upo_ttc/checkpoint_mejor_actor_sac_probabilistico.pt
+Episodio: 400
+Semillas: 132000 a 132099
+Éxitos: 80/100
+Tasa de éxito: 80.00%
+IC Wilson 95%: [71.12%, 86.66%]
+Conteos: {'meta': 80, 'colision_estatica': 9, 'colision_dinamica': 9, 'fuera_mapa': 0, 'timeout': 2}
+Colisión dinámica: 9.00%
+Colisión estática: 9.00%
+Fuera del mapa: 0.00%
+Timeout: 2.00%
+Recompensa media: 163.98915868093823
+Pasos promedio: 222.47
+Distancia final media: 1.660207721515435 m
+Error medio de ruta: 0.22060946618715122 m
+Clearance mínimo promedio: 0.2935731823714321 m
+Clearance mínimo absoluto: -0.08240301371212444 m
+Criterios: {'exito': False, 'colision_dinamica': True, 'colision_estatica': True, 'fuera_mapa': True, 'timeout': True, 'todos': False}
+Semillas fallidas: [132003, 132013, 132014, 132016, 132018, 132021, 132030, 132036, 132041, 132043, 132046, 132057, 132060, 132067, 132068, 132078, 132079, 132091, 132092, 132099]
